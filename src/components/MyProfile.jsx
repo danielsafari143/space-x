@@ -7,7 +7,7 @@ const MyProfile = () => {
     <div>
       <div className="missions">
         {
-           data.mission.map((item) => (item.reserved !== undefined ? <p key={item.id}>{item.mission_name}</p> : ''))
+           data.mission.map((item) => (item.reserved !== undefined && item.reserved ? <p key={item.id}>{item.mission_name}</p> : ''))
          }
       </div>
     </div>
