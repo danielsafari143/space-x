@@ -5,7 +5,7 @@ const MyProfile = () => {
   const data = useSelector((state) => state.mission);
   return (
     <div>
-      <div className="mission">
+      <div className="missions">
         {
            data.mission.map((item) => (item.reserved !== undefined ? <p key={item.id}>{item.mission_name}</p> : ''))
          }
