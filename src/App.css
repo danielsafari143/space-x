@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -42,7 +42,7 @@
   }
 }
 
-header{
+header {
   margin-bottom: 20px;
 }
 
@@ -80,12 +80,12 @@ header{
   border: 1px solid rgb(226, 222, 222);
 }
 
-.title{
+.title {
   font-weight: 700;
-  font-size:larger;
+  font-size: larger;
 }
 
-.header{
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,7 +102,7 @@ header{
   gap: 10px;
 }
 
-.link{
+.link {
   text-decoration: none;
 }
 
@@ -112,18 +112,18 @@ header{
   width: 1px;
 }
 
-.header-hr{
+.header-hr {
   margin: 0;
   width: 95vw;
   padding: 0;
   margin-left: 25px;
   margin-right: 25px;
   height: 1px;
-  background-color:   rgb(226, 222, 222);
+  background-color: rgb(226, 222, 222);
   border: none;
 }
 
-.missionTable{
+.missionTable {
   padding: 30px;
 }
 
@@ -132,12 +132,12 @@ header{
   padding: 10px;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(even) { background-color: #f2f2f2; }
 
-table tr:hover {background-color: #ddd;}
+table tr:hover { background-color: #ddd; }
 
-
-table td, table th {
+table td,
+table th {
   border: 1px solid #ddd;
   padding: 8px;
 }
@@ -146,7 +146,7 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color:white;
+  background-color: white;
   color: rgb(8, 8, 8);
 }
 
@@ -160,7 +160,7 @@ table th {
   padding: 10px;
 }
 
-.rocket-container{
+.rocket-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,11 +169,10 @@ table th {
   padding: 20px;
 }
 
-.rocket-container p{
+.rocket-container p {
   margin: 0;
   padding: 0;
 }
-
 
 .rocket-img {
   width: 17vw;
@@ -183,7 +182,7 @@ table th {
   width: 10vw;
 }
 
-.reserved{
+.reserved {
   padding: 4px;
   color: white;
   background-color: rgb(138, 138, 219);
