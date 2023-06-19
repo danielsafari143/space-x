@@ -6,6 +6,7 @@ import { fetchRockets } from './features/rockets/rocketsSlice';
 import { fetchMissions } from './features/missions/missionsSlice';
 import MyProfile from './components/MyProfile';
 import Mission from './components/Mission';
+import Rocket from './components/Rockets';
 import Main from './components/Main';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route element={<Main />}>
         <Route path="/" element={<MyProfile />} />
         <Route path="/missions" element={<Mission />} />
+        <Route path="/rockets" element={<Rocket />} />
       </Route>
     </Routes>
   );

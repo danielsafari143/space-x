@@ -5,6 +5,7 @@ const Navbar = () => (
   <header>
     <nav>
       <NavLink to="/missions">Missions</NavLink>
+      <NavLink to="/rockets">Rockets</NavLink>
     </nav>
   </header>
 );
