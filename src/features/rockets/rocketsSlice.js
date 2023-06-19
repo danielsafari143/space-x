@@ -15,7 +15,6 @@ export const fetchRockets = createAsyncThunk('rocket/fetchRocket', async () => {
     return error;
   }
 });
-
 const rocketsSlice = createSlice({
   name: 'rocket',
   initialState,
