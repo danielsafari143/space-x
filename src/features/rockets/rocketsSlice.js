@@ -22,6 +22,7 @@ const rocketsSlice = createSlice({
   extraReducers(builder) {
     builder.addCase(fetchRockets.fulfilled, (state, action) => {
       const data = action.payload;
+      state.rocket = [];
       data.forEach((item) => {
         state.rocket.push({
           id: item.id,

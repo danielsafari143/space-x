@@ -1,7 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
-  <div>Navbar</div>
+  <header>
+    <nav>
+      <NavLink to="/missions">Missions</NavLink>
+    </nav>
+  </header>
 );
 
 export default Navbar;

@@ -22,6 +22,7 @@ const missionsSlice = createSlice({
   extraReducers(builder) {
     builder.addCase(fetchMissions.fulfilled, (state, action) => {
       const data = action.payload;
+      state.mission = [];
       data.forEach((item) => {
         state.mission.push({
           id: item.mission_id,
