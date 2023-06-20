@@ -15,20 +15,33 @@ export const fetchRockets = createAsyncThunk('rocket/fetchRocket', async () => {
     return error;
   }
 });
-
 const rocketsSlice = createSlice({
   name: 'rocket',
   initialState,
   reducers: {
-    reserved: (state, action) => {
-      const revId = action.payload;
-      state.rocket = state.rocket.map((rock) => (rock.id === revId
-        ? { ...rock, reserved: true } : rock));
+    reservedRocket: (state, action) => {
+      const newArray = [...state.rocket];
+      state.rocket.filter((item, index) => {
+        if (action.payload === newArray[index].id) {
+          const value = { ...item, reserved: true };
+          newArray[index] = value;
+          state.rocket = newArray;
+          return newArray;
+        }
+        return newArray;
+      });
     },
-    cancel: (state, action) => {
-      const revId = action.payload;
-      state.rocket = state.rocket.map((rock) => (rock.id === revId
-        ? { ...rock, reserved: false } : rock));
+    leavedRocket: (state, action) => {
+      const newArray = [...state.rocket];
+      newArray.filter((item, index) => {
+        if (item.id === action.payload) {
+          const value = { ...item, reserved: false };
+          newArray[index] = value;
+          state.rocket = newArray;
+          return newArray;
+        }
+        return newArray;
+      });
     },
   },
   extraReducers(builder) {
@@ -47,6 +60,5 @@ const rocketsSlice = createSlice({
   },
 });
 
-export const { reserved, cancel } = rocketsSlice.actions;
-
+export const { reservedRocket, leavedRocket } = rocketsSlice.actions;
 export default rocketsSlice.reducer;

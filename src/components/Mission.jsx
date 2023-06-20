@@ -1,50 +1,38 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { join, leave } from '../features/missions/missionsSlice';
+import { joinMission, leaveMission } from '../features/missions/missionsSlice';
 
 const Mission = () => {
   const dispatch = useDispatch();
+
   const data = useSelector((state) => state.mission);
-
-  const joinMission = (id) => {
-    dispatch(join(id));
-  };
-
-  const leaveMission = (id) => {
-    dispatch(leave(id));
-  };
-
   return (
-    <ul>
-      {
+    <div className="missionTable">
+      <table>
+        <tr>
+          <th>Missions</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th> </th>
+        </tr>
+        {
                 data.mission.map((item) => (
-                  <li key={item.id}>
-                    <p>{item.rocket_name}</p>
-                    <p>{item.description}</p>
-                    {item.reserved ? (
-                      <div>
-                        <p>Active member</p>
-                        <button
-                          type="submit"
-                          onClick={() => leaveMission(item.id)}
-                        >
-                          Leave mission
-                        </button>
-                      </div>
-                    ) : (
-                      <div>
-                        <p>Not a member</p>
-                        <button
-                          type="submit"
-                          onClick={() => joinMission(item.id)}
-                        >
-                          Join mission
-                        </button>
-                      </div>
-                    )}
-                  </li>
+                  <tr key={item.id}>
+                    <td><p>{item.mission_name}</p></td>
+                    <td><p>{item.description}</p></td>
+                    <td>
+                      <button type="button" className="member">Not a member</button>
+                    </td>
+                    <td>
+                      {
+                        item.reserved ? (<button type="button" className="leave-btn" onClick={() => dispatch(leaveMission(item.id))}>Leave Mission</button>)
+                          : (<button type="button" className="joined-btn" onClick={() => dispatch(joinMission(item.id))}>Join Mission</button>)
+                      }
+                    </td>
+                  </tr>
                 ))
             }
-    </ul>
+      </table>
+    </div>
   );
 };
 

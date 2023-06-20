@@ -20,15 +20,29 @@ const missionsSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    join: (state, action) => {
-      const joinId = action.payload;
-      state.mission = state.mission.map((miss) => (miss.id === joinId
-        ? { ...miss, reserved: true } : miss));
+    joinMission: (state, action) => {
+      const newArray = [...state.mission];
+      state.mission.filter((item, index) => {
+        if (action.payload === newArray[index].id) {
+          const value = { ...item, reserved: true };
+          newArray[index] = value;
+          state.mission = newArray;
+          return newArray;
+        }
+        return newArray;
+      });
     },
-    leave: (state, action) => {
-      const leaveId = action.payload;
-      state.mission = state.mission.map((miss) => (miss.id === leaveId
-        ? { ...miss, reserved: false } : miss));
+    leaveMission: (state, action) => {
+      const newArray = [...state.mission];
+      newArray.filter((item, index) => {
+        if (item.id === action.payload) {
+          const value = { ...item, reserved: false };
+          newArray[index] = value;
+          state.mission = newArray;
+          return newArray;
+        }
+        return newArray;
+      });
     },
   },
   extraReducers(builder) {
@@ -38,14 +52,14 @@ const missionsSlice = createSlice({
       data.forEach((item) => {
         state.mission.push({
           id: item.mission_id,
-          rocket_name: item.mission_name,
+          mission_name: item.mission_name,
           description: item.description,
         });
       });
     });
   },
+
 });
 
-export const { join, leave } = missionsSlice.actions;
-
+export const { joinMission, leaveMission } = missionsSlice.actions;
 export default missionsSlice.reducer;
