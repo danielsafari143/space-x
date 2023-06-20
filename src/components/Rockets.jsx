@@ -1,11 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useState } from 'react';
 import { reservedRocket, leavedRocket } from '../features/rockets/rocketsSlice';
 
 const Rocket = () => {
   const data = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
-  const [leave, setLeave] = useState(true);
 
   return (
     <div className="rocket">
@@ -22,21 +20,25 @@ const Rocket = () => {
                             {item.reserved && <span className="reserved">Reserved</span>}
                             {` ${item.description}`}
                           </p>
-                          <button
-                            type="button"
-                            className="rocket-btn"
-                            onClick={() => {
-                              if (leave) {
-                                setLeave((previousState) => !previousState);
-                                dispatch(reservedRocket(item.id));
-                              } else {
-                                setLeave((previousState) => !previousState);
-                                dispatch(leavedRocket(item.id));
-                              }
-                            }}
-                          >
-                            {item.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
-                          </button>
+                          {
+                            item.reserved ? (
+                              <button
+                                type="button"
+                                className="rocket-btn"
+                                onClick={() => dispatch(leavedRocket(item.id))}
+                              >
+                                {item.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+                              </button>
+                            ) : (
+                              <button
+                                type="button"
+                                className="rocket-btn"
+                                onClick={() => dispatch(reservedRocket(item.id))}
+                              >
+                                Reserve Rocket
+                              </button>
+                            )
+                          }
                         </div>
                       </li>
                     ))

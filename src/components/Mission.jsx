@@ -1,10 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useState } from 'react';
 import { joinMission, leaveMission } from '../features/missions/missionsSlice';
 
 const Mission = () => {
   const dispatch = useDispatch();
-  const [leave, setLeave] = useState(true);
 
   const data = useSelector((state) => state.mission);
   return (
@@ -25,20 +23,10 @@ const Mission = () => {
                       <button type="button">Not a member</button>
                     </td>
                     <td>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          if (leave) {
-                            setLeave((previousState) => !previousState);
-                            dispatch(joinMission(item.id));
-                          } else {
-                            setLeave((previousState) => !previousState);
-                            dispatch(leaveMission(item.id));
-                          }
-                        }}
-                      >
-                        {item.reserved ? 'Leave mission' : 'Join Mission'}
-                      </button>
+                      {
+                        item.reserved ? (<button type="button" onClick={() => dispatch(leaveMission(item.id))}>Leave Mission</button>)
+                          : (<button type="button" onClick={() => dispatch(joinMission(item.id))}>Join Mission</button>)
+                      }
                     </td>
                   </tr>
                 ))
