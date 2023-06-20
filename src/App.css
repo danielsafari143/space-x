@@ -103,6 +103,7 @@ header {
 }
 
 .link {
+  padding-bottom: 5px;
   text-decoration: none;
 }
 
@@ -239,4 +240,12 @@ table th {
 
 .member-active {
   background-color: rgb(5, 152, 250);
+}
+
+.pending {
+  border: none;
+}
+
+.active {
+  border-bottom: 2px solid rgb(5, 152, 250);
 }
