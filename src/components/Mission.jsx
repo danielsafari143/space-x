@@ -20,7 +20,10 @@ const Mission = () => {
                     <td><p>{item.mission_name}</p></td>
                     <td><p>{item.description}</p></td>
                     <td>
-                      <button type="button" className="member">Not a member</button>
+                      {
+                        item.reserved ? (<button type="button" className="member member-active">Active Member</button>)
+                          : (<button type="button" className="member">Not a member</button>)
+                      }
                     </td>
                     <td>
                       {

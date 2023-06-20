@@ -123,6 +123,33 @@ header {
   border: none;
 }
 
+.missionTable {
+  padding: 30px;
+}
+
+.missionTable table {
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+table tr:nth-child(even) { background-color: #f2f2f2; }
+
+table tr:hover { background-color: #ddd; }
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: white;
+  color: rgb(8, 8, 8);
+}
+
 .rocket-item {
   display: flex;
   flex-direction: row;
@@ -145,4 +172,71 @@ header {
 .rocket-container p {
   margin: 0;
   padding: 0;
+}
+
+.rocket-img {
+  width: 17vw;
+}
+
+.rocket-btn {
+  width: 10vw;
+}
+
+.reserved {
+  padding: 4px;
+  color: white;
+  background-color: rgb(138, 138, 219);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.reserved-rocket {
+  background-color: rgb(5, 152, 250);
+  padding: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.reserved-rocket-nt {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: 1px solid rgb(187, 183, 183);
+  border-radius: 5px;
+  color: rgb(187, 183, 183);
+}
+
+.joined-btn {
+  width: 8vw;
+  padding: 5px;
+  border: 1px solid rgb(155, 153, 153);
+  border-radius: 3px;
+  color: rgb(155, 153, 153);
+}
+
+.leave-btn {
+  width: 8vw;
+  padding: 5px;
+  border: 1px solid rgb(250, 63, 63);
+  border-radius: 3px;
+  color: rgb(250, 63, 63);
+  background: white;
+}
+
+.member {
+  width: 8vw;
+  padding: 5px;
+  background-color: #817c7c;
+  border-radius: 2px;
+  border: none;
+  color: white;
+}
+
+.member-active {
+  background-color: rgb(5, 152, 250);
 }
