@@ -1,10 +1,10 @@
-import { render, screen, waitFor } from "@testing-library/react";
-import Mission from "../components/Mission";
-import { configureStore } from "@reduxjs/toolkit";
-import { Provider } from "react-redux";
-import axios from "axios";
+import { render, screen, waitFor } from '@testing-library/react';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import axios from 'axios';
+import Mission from '../components/Mission';
 
-jest.mock("axios");
+jest.mock('axios');
 
 const dummyData = [
   {
@@ -29,25 +29,22 @@ const dummyData = [
     description:
       'Telstar 19V (Telstar 19 Vantage) is a communication satellite in the Telstar series of the Canadian satellite communications company Telesat. It was built by Space Systems Loral (MAXAR) and is based on the SSL-1300 bus. As of 26 July 2018, Telstar 19V is the heaviest commercial communications satellite ever launched, weighing at 7,076 kg (15,600 lbs) and surpassing the previous record, set by TerreStar-1 (6,910 kg/15230lbs), launched by Ariane 5ECA on 1 July 2009.',
   },
-]
+];
 
-const reducer = (state = { mission: dummyData }, action) => {
-  return state;
-};
+const reducer = (state = { mission: dummyData }) => state;
 
 const store = configureStore({ reducer });
 
-describe("Should render correctly", () => {
+describe('Should render correctly', () => {
   it('It should get all mission loaded', async () => {
-    axios.get.mockResolvedValue({ data: dummyData});
-
-    // const store = mockStore({ mission: dummyData});
+    axios.get.mockResolvedValue({ data: dummyData });
+    
     render(
       <Provider store={store}>
-        <Mission/>
-      </Provider>
+        <Mission />
+      </Provider>,
     );
     const mission = await waitFor(() => screen.getAllByTestId('mission-test'));
     expect(mission).toHaveLength(2);
-  })
-})
+  });
+});
