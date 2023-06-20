@@ -24,7 +24,7 @@ const Rocket = () => {
                             item.reserved ? (
                               <button
                                 type="button"
-                                className="rocket-btn"
+                                className="rocket-btn reserved-rocket-nt"
                                 onClick={() => dispatch(leavedRocket(item.id))}
                               >
                                 {item.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
@@ -32,7 +32,7 @@ const Rocket = () => {
                             ) : (
                               <button
                                 type="button"
-                                className="rocket-btn"
+                                className="rocket-btn reserved-rocket"
                                 onClick={() => dispatch(reservedRocket(item.id))}
                               >
                                 Reserve Rocket

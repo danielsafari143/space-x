@@ -20,9 +20,9 @@ function App() {
   return (
     <Routes>
       <Route element={<Main />}>
-        <Route path="/" element={<MyProfile />} />
+        <Route path="/" element={<Rocket />} />
         <Route path="/missions" element={<Mission />} />
-        <Route path="/rockets" element={<Rocket />} />
+        <Route path="/myprofile" element={<MyProfile />} />
       </Route>
     </Routes>
   );
