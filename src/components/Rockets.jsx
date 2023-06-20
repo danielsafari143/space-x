@@ -16,10 +16,7 @@ const Rocket = () => {
                           <p className="rocket-paragraph-first">
                             {item.rocket_name}
                           </p>
-                          <p className="rocket-paragraph-first">
-                            {item.reserved && <span className="reserved">Reserved</span>}
-                            {` ${item.description}`}
-                          </p>
+                          <p className="rocket-paragraph-first">{item.description}</p>
                           {
                             item.reserved ? (
                               <button
