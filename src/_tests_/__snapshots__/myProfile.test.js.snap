@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test MyProfile should test the snapshot of main page 1`] = `
+<div
+  className="myprofile"
+>
+  <div
+    className="missions"
+  >
+    <h3>
+      Missions
+    </h3>
+  </div>
+  <div
+    className="rockets"
+  >
+    <h3>
+      Rockets
+    </h3>
+  </div>
+</div>
+`;
