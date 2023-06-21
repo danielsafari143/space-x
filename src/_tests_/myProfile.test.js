@@ -1,8 +1,10 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import renderer from 'react-test-renderer';
+import { MemoryRouter } from 'react-router-dom';
+import Items from './data';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import axios from 'axios';
-import Mission from '../components/Mission';
+import MyProfile from '../components/MyProfile';
 
 jest.mock('axios');
 
@@ -39,19 +41,23 @@ const dummyData = [
   },
 ];
 
-const reducer = (state = { mission: { mission: dummyData } }) => state;
+const reducer = (state = {
+  mission: { mission: dummyData },
+  rockets: { rocket: Items },
+}) => state;
 
 const store = configureStore({ reducer });
 
-describe('Should render correctly', () => {
-  it('It should get all mission loaded', async () => {
+describe('should test MyProfile', () => {
+  it('should test the snapshot of main page', () => {
     axios.get.mockResolvedValue({ data: dummyData });
-    render(
-      <Provider store={store}>
-        <Mission />
-      </Provider>,
-    );
-    const mission = await waitFor(() => screen.getAllByTestId('mission-test'));
-    expect(mission).toHaveLength(2);
+    const navb = renderer.create(
+      <MemoryRouter>
+        <Provider store={store}>
+          <MyProfile />
+        </Provider>
+      </MemoryRouter>,
+    ).toJSON();
+    expect(navb).toMatchSnapshot();
   });
 });

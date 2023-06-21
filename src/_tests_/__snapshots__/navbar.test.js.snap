@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the navbar should test the snapshot of the navbar 1`] = `
+<header>
+  <div
+    className="header"
+  >
+    <h1
+      className="title"
+    >
+      Space Travelers
+    </h1>
+    <nav>
+      <a
+        aria-current="page"
+        className="link active"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+      <a
+        className="link"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+      <hr
+        className="nav-hr"
+      />
+      <a
+        className="link"
+        href="/myprofile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </nav>
+  </div>
+  <hr
+    className="header-hr"
+  />
+</header>
+`;
