@@ -160,12 +160,12 @@ const data = [{
 }];
 
 data.forEach((item) => {
-    Items.push({
-      id: item.id,
-      rocket_name: item.name,
-      description: item.description,
-      flickr_images: item.flickr_images,
-    });
+  Items.push({
+    id: item.id,
+    rocket_name: item.name,
+    description: item.description,
+    flickr_images: item.flickr_images,
   });
+});
 
 export default Items;

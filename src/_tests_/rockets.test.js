@@ -1,9 +1,9 @@
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import Items from './data';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import axios from 'axios';
+import Items from './data';
 import Rocket from '../components/Rockets';
 
 jest.mock('axios');
@@ -27,4 +27,3 @@ describe('should test the rocket component', () => {
     expect(navb).toMatchSnapshot();
   });
 });
-
