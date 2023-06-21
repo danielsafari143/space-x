@@ -12,6 +12,10 @@ Object {
           <h1
             class="title"
           >
+            <img
+              alt="logo"
+              src="planet.png"
+            />
             Space Travelers
           </h1>
           <nav>
@@ -53,6 +57,10 @@ Object {
         <h1
           class="title"
         >
+          <img
+            alt="logo"
+            src="planet.png"
+          />
           Space Travelers
         </h1>
         <nav>

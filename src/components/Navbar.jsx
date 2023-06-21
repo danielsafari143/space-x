@@ -1,10 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import planet from '../assets/img/planet.png';
 
 const Navbar = () => (
   <header>
     <div className="header">
-      <h1 className="title">Space Travelers</h1>
+      <h1 className="title">
+        <img src={planet} alt="logo" />
+        Space Travelers
+      </h1>
       <nav>
         <NavLink
           to="/"
