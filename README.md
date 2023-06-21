@@ -1,10 +1,11 @@
 <a name="readme-top"></a>
 
 <!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
+!!! IMPORTANT !!!
+This README is an example of how you could professionally present your codebase. 
+Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
 
-Modify this file to match your project and remove sections that don't apply.
+You should modify this file to match your project and remove sections that don't apply.
 
 REQUIRED SECTIONS:
 - Table of Contents
@@ -23,7 +24,15 @@ OPTIONAL SECTIONS:
 - FAQ
 
 After you're finished please remove all the comments and instructions!
+
+For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
 -->
+
+<div align="center">
+
+  <h3><b>Space Travelers' Hub</b></h3>
+
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -33,20 +42,25 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
   - [Usage](#usage)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space Travelers' Hub ] <a name="about-project"></a>
+# 📖 Space Travelers' Hub <a name="about-project"></a>
 
 **Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. This web application allows users to book rockets and join selected space missions.
 
@@ -55,120 +69,101 @@ After you're finished please remove all the comments and instructions!
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>React</summary>
+  <summary>Client</summary>
   <ul>
-    <li><a href="#">React</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://nodejs.org/en">Node js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
-
-<details>
-  <summary>CSS</summary>
-  <ul>
-    <li><a href="#">CSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Jest testing</summary>
-  <ul>
-    <li><a href="#">Jest testing</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Redux</summary>
-  <ul>
-    <li><a href="#">Redux</a></li>
-  </ul>
-</details>
-
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **React**
-- **API**
-- **Redux**
-- **React-router-dom**
-- **Join or leave missions**
 - **Book rockets**
-- **Profile to see selected missions and rockets booked**
+- **Join missions**
+- **Reserve rockets**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://space-x-tm3l.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-Install latest node js
- 
+
+To get a local copy up and running, follow these steps
+
+<li>Install node js</li>
+<li>Clone this repository to your computer</li>
+<li>Run npm install</li>
+<li>Run npm </li>
 
 ### Prerequisites
-Clone this repository
-npm install
-npm start
 
+In order to run this project you need:
 
-<!--
-Example command:
 
 ```sh
- 
+ npm install
 ```
- -->
 
 ### Setup
 
-Clone this repository to your desired folder: https://github.com/danielsafari143/space-x or visit the website https://space-x-tm3l.onrender.com/
+Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:danielsafari143/space-x.git
 ```
---->
-<!--
-Example command:
+
+### Install
+
+Install this project with:
+
 
 ```sh
   cd my-project
-  gem install
+  npm install
 ```
---->
+
 
 ### Usage
 
-Book rockets and join selected space missions
+To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+  npm start
 ```
---->
 
-<!--
-Example command:
+### Run tests
+
+To run tests, run the following command:
+
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm run test
 ```
---->
 
 ### Deployment
 
-https://space-x-tm3l.onrender.com/
+You can deploy this project using:
 
-<!--
-Example:
 
 ```sh
-
+    npm run build
 ```
- -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,8 +189,11 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[ Backend ]**
-- [ ] **[Artificial Intelligence]**
+> Describe 1 - 3 features you will add to the project.
+
+ **Backend**
+ 
+ **AI Chat boot**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -213,7 +211,9 @@ Feel free to check the [issues page](https://github.com/danielsafari143/space-x/
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, support and encourage me and give this project a ⭐️
+> Write a message to encourage readers to support your project
+
+If you like this project, please give it a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,7 +221,21 @@ If you like this project, support and encourage me and give this project a ⭐�
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you microverse
+I would like to thank everyone at microverse
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **Can I add mission**
+
+  - No, but in a later version, users will be able to add their desired mission
+
+- **Can I leave missions I joined**
+
+  - You have options to leave missions you joined, after you join on the dashboard
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -229,6 +243,8 @@ Thank you microverse
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/danielsafari143/space-x/blob/develop/LICENSE) licensed.
+This project is [MIT]([./LICENSE](https://github.com/danielsafari143/space-x/blob/develop/LICENSE)) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
