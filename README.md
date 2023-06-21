@@ -1,70 +1,245 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+!!! IMPORTANT !!!
+This README is an example of how you could professionally present your codebase. 
+Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
 
-## Available Scripts
+You should modify this file to match your project and remove sections that don't apply.
 
-In the project directory, you can run:
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-### `npm start`
+OPTIONAL SECTIONS:
+- FAQ
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After you're finished please remove all the comments and instructions!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
+-->
 
-### `npm test`
+<div align="center">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <h3><b>Space Travelers' Hub</b></h3>
 
-### `npm run build`
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- TABLE OF CONTENTS -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 📗 Table of Contents
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-### `npm run eject`
+<!-- PROJECT DESCRIPTION -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 📖 Space Travelers' Hub <a name="about-project"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. This web application allows users to book rockets and join selected space missions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠 Built With <a name="built-with"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Tech Stack <a name="tech-stack"></a>
 
-## Learn More
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://nodejs.org/en">Node js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+  </ul>
+</details>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- Features -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Key Features <a name="key-features"></a>
 
-### Code Splitting
+- **Book rockets**
+- **Join missions**
+- **Reserve rockets**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- LIVE DEMO -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Live Demo <a name="live-demo"></a>
 
-### Making a Progressive Web App
+- [Live Demo Link](https://space-x-tm3l.onrender.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+<!-- GETTING STARTED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+To get a local copy up and running, follow these steps
+
+<li>Install node js</li>
+<li>Clone this repository to your computer</li>
+<li>Run npm install</li>
+<li>Run npm </li>
+
+### Prerequisites
+
+In order to run this project you need:
+
+
+```sh
+ npm install
+```
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+```sh
+  cd my-folder
+  git clone git@github.com:danielsafari143/space-x.git
+```
+
+### Install
+
+Install this project with:
+
+
+```sh
+  cd my-project
+  npm install
+```
+
+
+### Usage
+
+To run the project, execute the following command:
+
+
+```sh
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+
+```sh
+  npm run test
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this project using:
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+    npm run build
+```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Ayodele Isaac**
+
+- GitHub: [@githubhandle](https://github.com/mosidrum)
+- Twitter: [@twitterhandle](https://twitter.com/mosidrum)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/isaac-ayodele-37890521b)
+
+👤 **Safari Hamuli**
+
+- GitHub: [@githubhandle](https://github.com/danielsafari143)
+- Twitter: [@twitterhandle](https://twitter.com/DanielSafari143)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/safari-daniel-a01744251)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+ **Backend**
+ 
+ **AI Chat boot**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/danielsafari143/space-x/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please give it a ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank everyone at microverse
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **Can I add mission**
+
+  - No, but in a later version, users will be able to add their desired mission
+
+- **Can I leave missions I joined**
+
+  - You have options to leave missions you joined, after you join on the dashboard
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT]([./LICENSE](https://github.com/danielsafari143/space-x/blob/develop/LICENSE)) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
