@@ -31,14 +31,13 @@ const dummyData = [
   },
 ];
 
-const reducer = (state = { mission: dummyData }) => state;
+const reducer = (state = { mission: { mission: dummyData } }) => state;
 
 const store = configureStore({ reducer });
 
 describe('Should render correctly', () => {
   it('It should get all mission loaded', async () => {
     axios.get.mockResolvedValue({ data: dummyData });
-
     render(
       <Provider store={store}>
         <Mission />
