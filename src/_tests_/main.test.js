@@ -1,12 +1,12 @@
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
-import Navbar from '../components/Navbar';
+import Main from '../components/Main';
 
-describe('Navbar component', () => {
+describe('Main component', () => {
   test('Renders correctly', () => {
     const tree = render(
       <MemoryRouter>
-        <Navbar />
+        <Main />
       </MemoryRouter>,
     );
     expect(tree).toMatchSnapshot();
