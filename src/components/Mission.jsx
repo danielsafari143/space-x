@@ -16,7 +16,7 @@ const Mission = () => {
         </tr>
         {
                 data.mission.map((item) => (
-                  <tr key={item.id}>
+                  <tr key={item.id} data-testid="mission-test">
                     <td><p>{item.mission_name}</p></td>
                     <td><p>{item.description}</p></td>
                     <td>
